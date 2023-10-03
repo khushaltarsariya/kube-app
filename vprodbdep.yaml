@@ -1,4 +1,4 @@
-apiVersion: app/latest
+apiVersion: app/v1
 kind: Deployment
 metadata:
   name: vprodb
@@ -11,7 +11,7 @@ spec:
   replicas: 1
   template:
     metadata:
-      lables:
+      labels:
         app: vprodb
     spec:
       containers:
